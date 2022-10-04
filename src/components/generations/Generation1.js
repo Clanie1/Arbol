@@ -11,7 +11,7 @@ const Generation1 = () => {
   return (
     <div className="h-screen flex flex-col snap-center justify-start bg-[#1a181b]">
       <div className=" flex items-center justify-center">
-        <h1 className="uppercase font-bold text-8xl">
+        <h1 className="uppercase font-bold text-8xl text-center">
           Daniel <label className="text-secondary-50">Barocio</label>
         </h1>
       </div>
