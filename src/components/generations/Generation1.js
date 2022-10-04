@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import hermana from "../../img/hermana.jpg";
 import americano from "../../img/americano.jpg";
+import familia from "../../img/familia.jpg";
+import papahermana from "../../img/papahermana.jpg";
+import SF from "../../img/sanfransisco.jpg";
 import { useState } from "react";
 import bandera from "../../img/bandera.png";
 import yo from "../../img/yo2.jpg";
@@ -24,7 +27,7 @@ const Generation1 = () => {
         />
         {view ? (
           <>
-            <motion.div
+            {/* <motion.div
               animate={{
                 scale: [0, 1, 1, 1],
                 x: [300, 0, 0, 0],
@@ -42,7 +45,48 @@ const Generation1 = () => {
                 Barocio y Gabriela Valdez. Actual estudiante de ingenieria,
                 ex-deportista
               </p>
-            </motion.div>
+            </motion.div> */}
+            <div className="absolute left-20 order-3 flex flex-col items-center space-between gap-5">
+              <motion.div
+                className=" overflow-hidden max-w-[270px] bg-contain bg-no-repeat rounded-lg"
+                animate={{
+                  x: [350, 0],
+                  y: [150, 0],
+                  scale: [0, 1],
+                }}
+                transition={{
+                  duration: 0.5,
+                }}
+              >
+                <img src={SF} />
+              </motion.div>
+              <motion.div
+                className="border- border-white overflow-hidden max-w-[270px] bg-contain bg-no-repeat rounded-lg"
+                animate={{
+                  x: [300, 0],
+                  y: [-50, 0],
+                  scale: [0, 1],
+                }}
+                transition={{
+                  duration: 1,
+                }}
+              >
+                <img src={familia} />
+              </motion.div>
+              <motion.div
+                className="border- border-white overflow-hidden max-w-[270px] bg-contain bg-no-repeat rounded-lg"
+                animate={{
+                  x: [520, 520, 0, 0],
+                  y: [-20, 0, 0, 0],
+                  scale: [0, 1],
+                }}
+                transition={{
+                  duration: 1.5,
+                }}
+              >
+                <img src={papahermana} />
+              </motion.div>
+            </div>
             <div className="absolute right-20 order-3 flex flex-col items-center space-between gap-5">
               <motion.div
                 className=" overflow-hidden max-w-[270px] bg-contain bg-no-repeat rounded-lg"
