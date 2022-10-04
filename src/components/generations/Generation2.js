@@ -4,6 +4,8 @@ import papa from "../../img/papa.jpg";
 import invierno from "../../img/planet-581239.jpg";
 import { Parallax } from "react-parallax";
 import { useEffect, useState } from "react";
+import mexico from "../../img/mexico.png";
+import bolivia from "../../img/Bolivia.png";
 
 const Generation2 = () => {
   const [windowDimenion, detectHW] = useState({
@@ -37,6 +39,14 @@ const Generation2 = () => {
           renderLayer={(percentage) => {
             return (
               <>
+                <img
+                  src={mexico}
+                  className="w-[1200px] h-[700px] absolute right-[-650px] top-[30px]"
+                />
+                <img
+                  src={bolivia}
+                  className="w-[1200px] h-[700px] absolute left-[-500px] top-[10px]"
+                />
                 <div className="flex justify-between m-auto w-full max-w-[1800px]">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
